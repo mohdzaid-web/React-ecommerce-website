@@ -2,40 +2,42 @@ import { Link } from "react-router";
 const title = 'More Then 60,000 Customers';
 
 const desc = "Buy products on your any device with our app & enjoy your time what you want. Just download & install & start to shopping";
+import avatar from "../assets/images/clients/avater.jpg"
 
 const clientsList = [
 {
- imgUrl: '/src/assets/images/clients/avater.jpg',
+//  imgUrl: '/src/assets/images/clients/avater.jpg',
+imgUrl:avatar,
 imgAlt: 'education thumb rajibraj91 rajibraj',
 text: 'Join with Us',
 },
 {
-imgUrl: '/src/assets/images/clients/avater.jpg',
+imgUrl:avatar,
 imgAlt: 'education thumb rajibraj91 rajibraj',
 text: 'Join with Us',
 },
 {
-imgUrl: '/src/assets/images/clients/avater.jpg',
+imgUrl:avatar,
 imgAlt: 'education thumb rajibraj91 rajibraj',
 text: 'Join with Us',
 },
 {
-imgUrl: '/src/assets/images/clients/avater.jpg',
+imgUrl:avatar,
 imgAlt: 'education thumb rajibraj91 rajibraj',
 text: 'Join with Us',
 },
 {
-imgUrl: '/src/assets/images/clients/avater.jpg',
+imgUrl:avatar,
 imgAlt: 'education thumb rajibraj91 rajibraj',
 text: 'Join with Us',
 },
 {
-imgUrl: '/src/assets/images/clients/avater.jpg',
+imgUrl:avatar,
 imgAlt: 'education thumb rajibraj91 rajibraj',
 text: 'Join with Us',
 },
 {
-imgUrl: '/src/assets/images/clients/avater.jpg',
+imgUrl:avatar,
 imgAlt: 'education thumb rajibraj91 rajibraj',
 text: 'Join with Us',
 },

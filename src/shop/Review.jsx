@@ -3,7 +3,41 @@ import Rating from "../components/Rating";
 import myimg from '../assets/images/shop/01.jpg'
  const reviwtitle = "Add a Review";
 
-let ReviewList = [ { imgUrl: "/src/assets/images/instructor/01.jpg", imgAlt: "Client thumb", name: "Ganelon Boileau", date: "Posted on Jun 10, 2022 at 6:57 am", desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.", }, { imgUrl: "/src/assets/images/instructor/02.jpg", imgAlt: "Client thumb", name: "Morgana Cailot", date: "Posted on Jun 10, 2022 at 6:57 am", desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.", }, { imgUrl: "/src/assets/images/instructor/03.jpg", imgAlt: "Client thumb", name: "Telford Bois", date: "Posted on Jun 10, 2022 at 6:57 am", desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.", }, { imgUrl: "/src/assets/images/instructor/04.jpg", imgAlt: "Client thumb", name: "Cher Daviau", date: "Posted on Jun 10, 2022 at 6:57 am", desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.", }, ];
+import instructor01 from "../assets/images/instructor/01.jpg"
+import instructor02 from "../assets/images/instructor/02.jpg"
+import instructor03 from "../assets/images/instructor/03.jpg"
+import instructor04 from "../assets/images/instructor/04.jpg"
+
+let ReviewList = [
+    {
+        imgUrl: instructor01,
+        imgAlt: "Client thumb",
+        name: "Ganelon Boileau",
+        date: "Posted on Jun 10, 2022 at 6:57 am",
+        desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
+    },
+    {
+        imgUrl: instructor02,
+        imgAlt: "Client thumb",
+        name: "Morgana Cailot",
+        date: "Posted on Jun 10, 2022 at 6:57 am",
+        desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
+    },
+    {
+        imgUrl: instructor03,
+        imgAlt: "Client thumb",
+        name: "Telford Bois",
+        date: "Posted on Jun 10, 2022 at 6:57 am",
+        desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
+    },
+    {
+        imgUrl: instructor04,
+        imgAlt: "Client thumb",
+        name: "Cher Daviau",
+        date: "Posted on Jun 10, 2022 at 6:57 am",
+        desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
+    },
+]
 
 const Review = ()=>{
     const [revieshow, setreviewshow] = useState(true)

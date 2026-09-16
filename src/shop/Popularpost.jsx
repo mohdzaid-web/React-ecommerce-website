@@ -1,7 +1,42 @@
 import { Link } from "react-router"
+
+import blog10 from "../assets/images/blog/10.jpg"
+import blog11 from "../assets/images/blog/11.jpg"
+import blog12 from "../assets/images/blog/12.jpg"
+import blog09 from "../assets/images/blog/09.jpg"
+
 const title = 'Most Popular Post'
-const postList =
- [ { id:1, imgUrl: '/src/assets/images/blog/10.jpg', imgAlt: 'rajibraj91', title: 'Poor People Campaign Our Resources', date: 'Jun 05,2026', }, { id:2, imgUrl: '/src/assets/images/blog/11.jpg', imgAlt: 'rajibraj91', title: 'Poor Peoples Campaign Our Resources', date: 'Jun 05,2026', }, { id:3, imgUrl: '/src/assets/images/blog/12.jpg', imgAlt: 'rajibraj91', title: 'Poor Peoples Campaign Our Resources', date: 'Jun 05,2026', }, { id:4, imgUrl: '/src/assets/images/blog/09.jpg', imgAlt: 'rajibraj91', title: 'Poor Peoples Campaign Our Resources', date: 'Jun 05,2026', }, ]
+
+const postList = [
+    {
+        id: 1,
+        imgUrl: blog10,
+        imgAlt: 'rajibraj91',
+        title: 'Poor People Campaign Our Resources',
+        date: 'Jun 05,2026',
+    },
+    {
+        id: 2,
+        imgUrl: blog11,
+        imgAlt: 'rajibraj91',
+        title: 'Poor Peoples Campaign Our Resources',
+        date: 'Jun 05,2026',
+    },
+    {
+        id: 3,
+        imgUrl: blog12,
+        imgAlt: 'rajibraj91',
+        title: 'Poor Peoples Campaign Our Resources',
+        date: 'Jun 05,2026',
+    },
+    {
+        id: 4,
+        imgUrl: blog09,
+        imgAlt: 'rajibraj91',
+        title: 'Poor Peoples Campaign Our Resources',
+        date: 'Jun 05,2026',
+    },
+]
 
 const PopularPost = ()=>{
     return(

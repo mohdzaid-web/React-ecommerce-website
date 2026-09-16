@@ -4,7 +4,30 @@ const subTitle = "About Our Brand"; const title = "Good Qualification Services A
 
 const year = "30+"; const expareance = "Years Of Experiences";
 
-const aboutList = [ { imgUrl: '/src/assets/images/about/icon/01.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Skilled Instructors', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, { imgUrl: '/src/assets/images/about/icon/02.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Get Certificate', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, { imgUrl: '/src/assets/images/about/icon/03.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Online Classes', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, ]
+import about01 from "../assets/images/about/icon/01.jpg"
+import about02 from "../assets/images/about/icon/02.jpg"
+import about03 from "../assets/images/about/icon/03.jpg"
+
+const aboutList = [
+    {
+        imgUrl: about01,
+        imgAlt: 'about icon rajibraj91 rajibraj',
+        title: 'Skilled Instructors',
+        desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
+    },
+    {
+        imgUrl: about02,
+        imgAlt: 'about icon rajibraj91 rajibraj',
+        title: 'Get Certificate',
+        desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
+    },
+    {
+        imgUrl: about03,
+        imgAlt: 'about icon rajibraj91 rajibraj',
+        title: 'Online Classes',
+        desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
+    },
+]
 const About = ()=>{
     return(
         <div>

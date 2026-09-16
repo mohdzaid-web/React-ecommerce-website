@@ -4,6 +4,8 @@ import { useParams } from "react-router"
 import PageHeader from "../components/PageHeader"
 import Tags from "../shop/Tags";
 import PopularPost from "../shop/Popularpost";
+import blogSingle from "../assets/images/blog/single/01.jpg"
+import blogSingle02 from "../assets/images/blog/single/02.jpg"
 const socialList = [ { link: "#", iconName: "icofont-facebook", className: "facebook", }, { link: "#", iconName: "icofont-twitter", className: "twitter", }, { link: "#", iconName: "icofont-linkedin", className: "linkedin", }, { link: "#", iconName: "icofont-instagram", className: "instagram", }, { link: "#", iconName: "icofont-pinterest", className: "pinterest", }, ];
 
 const SingleBlog = ()=>{
@@ -64,14 +66,14 @@ const SingleBlog = ()=>{
                                                                     Iste ratione quos dolorem, rem repellendus accusamus tempore voluptatem cupiditate hic officia nesciunt alias nihil neque! Non doloribus quaerat omnis, esse cumque, et ex, repellendus officia pariatur tempore dolorem ipsam.
                                                                     Inventore nisi explicabo ea ipsam, nam iure similique? Perferendis enim, soluta necessitatibus tenetur optio, sunt modi a veniam quasi aspernatur consequuntur, delectus eum vitae sequi minus. Autem rem dolorem quos?
                                                                    </p>
-                                                                   <img src="/src/assets/images/blog/single/01.jpg" alt="" />
+                                                                   <img src={blogSingle}alt="" />
                                                                    <p>
                                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, tempora fugit eius praesentium deserunt, minima architecto earum, similique atque dicta voluptates placeat esse molestias itaque labore veniam laudantium dolorem adipisci!
                                                                     Fuga incidunt sequi exercitationem maiores eum odit magni qui inventore aliquam, repellat dolorum in, doloribus commodi illum animi eius ad rem veniam aut dolor voluptas. Blanditiis, cupiditate minus! Consectetur, maiores.
                                                                     Porro earum reiciendis reprehenderit repudiandae optio quis consequuntur neque. Perspiciatis culpa dolor nemo doloribus libero, dolorum rem magnam accusamus. Fuga enim sunt obcaecati molestias recusandae in consequuntur quae voluptates placeat?
                                                                    </p>
                                                                    <div className="video-thumb">
-                                                                    <img src="/src/assets/images/blog/single/02.jpg"  alt="" />
+                                                                    <img src={blogSingle02}  alt="" />
                                                                     <a href="https://youtu.be/_W3R2VwRyF4?SI=DQrQfEMwVnu01v6X" className="video-button popup" target="_blank">
                                                                     <i className="icofont-ui-play"></i>
                                                                     </a>
