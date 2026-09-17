@@ -28,13 +28,23 @@ const Shop = ()=>{
     // filter product category
     const [selectedcategory, setselectedcategory] = useState("All")
     const manuItems = [...new Set(Data.map((val)=>val.category))]
-    const filterItem = (curcat)=>{
-        const newitem = Data.filter((newval)=>{
-            return newval.category === curcat
-        })
-        setselectedcategory(curcat)
-        setproduct(newitem)
-    }
+    // const filterItem = (curcat)=>{
+    //     const newitem = Data.filter((newval)=>{
+    //         return newval.category === curcat
+    //     })
+    //     setselectedcategory(curcat)
+    //     setproduct(newitem)
+    // }
+
+    const filterItem = (curcat) => {
+    const newitem = Data.filter((newval) => {
+        return newval.category === curcat
+    })
+
+    setselectedcategory(curcat)
+    setproduct(newitem)
+    setcurrentpage(1)
+}
     
     
     return(
@@ -72,7 +82,14 @@ const Shop = ()=>{
                          <div className="col-lg-4 col-12">
                             <aside>
                                 <Search products={product} Gridlist={Gridlist}/>
-                                <ShopCategory filterItem={filterItem} setitem={setproduct} manuItems={manuItems} setproduct={setproduct} selectedcategory={selectedcategory}/>
+                                <ShopCategory
+    filterItem={filterItem}
+    setitem={setselectedcategory}
+    manuItems={manuItems}
+    setproduct={setproduct}
+    selectedcategory={selectedcategory}
+/>
+                                {/* <ShopCategory filterItem={filterItem} setitem={setproduct} manuItems={manuItems} setproduct={setproduct} selectedcategory={selectedcategory}/> */}
                                 <PopularPost />
                                 <Tags />
                             </aside>

@@ -7,7 +7,7 @@ const Pagination = ({productperpage,totalproduct,paginate,activepage})=>{
         <ul className="default-pagination lab-ul">
             <li>
                 <a href="#" onClick={()=>{
-                    if(activepage < pagenumber.length){
+                    if(activepage > 1){
                         paginate(activepage-1)
                     }
                 }}>

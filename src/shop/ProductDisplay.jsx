@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router"
+import './CardPage.css'
 const desc = 'Energistra an deliver atactice metric after avsionary Apropria transition enterprice an source application emmerging psd template'
 const ProductDisplay = ({item})=>{
     const {name, id, price, seller, ratingcount,quantity,img} = item
