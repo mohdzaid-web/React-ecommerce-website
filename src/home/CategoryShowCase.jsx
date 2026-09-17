@@ -146,7 +146,7 @@ const CategoryShowCase = ()=>{
                                     </div>
                                     {/* content */}
                                     <div className="course-content">
-                                        <Link to={`/shop/${product.id}`}><h6>{product.title}</h6></Link>
+                                        <Link to={`/shop`}><h6>{product.title}</h6></Link>
                                         <div className="course-footer">
                                             <div className="course-author">
                                                 <Link to='/' className="ca-name">{product.brand}</Link>

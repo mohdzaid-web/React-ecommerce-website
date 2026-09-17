@@ -155,7 +155,7 @@ const SingleProduct = () => {
                                                         className="mySwiper"
                                                         spaceBetween={30}
                                                         slidesPerView={1}
-                                                        loop={true}
+                                                       loop={result.length > 1}
                                                         autoplay={{
                                                             delay: 2000,
                                                             disableOnInteraction: false

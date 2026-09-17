@@ -25,13 +25,22 @@ const Productcard = ({Gridlist,product})=>{
                             </div>
                             {/* product content */}
                             <div className="product-content">
-                                <h5>
+                                {/* <h5>
                                     <Link  to={`/shop/${pro.id}`}>{pro.name}</Link>
                                     <p className="productRating">
                                         <Rating />
                                     </p>
                                     <h6>₹{pro.price}</h6>
-                                </h5>
+                                </h5> */}
+                            <h5>
+                              <Link to={`/shop/${pro.id}`}>{pro.name}</Link>
+                           </h5>
+
+                      <p className="productRating">
+                          <Rating />
+                    </p>
+
+                    <h6>₹{pro.price}</h6>
                             </div>
                         </div>
                         {/* list start */}
@@ -52,13 +61,22 @@ const Productcard = ({Gridlist,product})=>{
                             </div>
                             {/* product content */}
                             <div className="product-content">
-                                <h5>
+                                {/* <h5>
                                     <Link  to={`/shop/${pro.id}`}>{pro.name}</Link>
                                     <p className="productRating">
                                         <Rating />
                                     </p>
                                     <h6>₹{pro.price}</h6>
+                                </h5> */}
+                                <h5>
+                              <Link to={`/shop/${pro.id}`}>{pro.name}</Link>
                                 </h5>
+
+                   <p className="productRating">
+                       <Rating />
+                     </p>
+
+                 <h6>₹{pro.price}</h6>
                             </div>
                         </div>
                     </div>
