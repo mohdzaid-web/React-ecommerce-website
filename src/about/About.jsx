@@ -7,6 +7,8 @@ const year = "30+"; const expareance = "Years Of Experiences";
 import about01 from "../assets/images/about/icon/01.jpg"
 import about02 from "../assets/images/about/icon/02.jpg"
 import about03 from "../assets/images/about/icon/03.jpg"
+import aboutImage01 from "../assets/images/about/01.jpg"
+import aboutImage02 from "../assets/images/about/02.jpg"
 
 const aboutList = [
     {
@@ -38,10 +40,10 @@ const About = ()=>{
                     <div className="col">
                         <div className="about-left">
                             <div className="about-thumb">
-                                <img src='src/assets/images/about/01.jpg' alt="" />
+                                <img src={aboutImage01} alt="" />
                             </div>
                             <div className="abs-thumb">
-                                <img src='src/assets/images/about/02.jpg' alt="" />
+                                <img src={aboutImage02} alt="" />
                             </div>
                             <div className="about-left-content">
                                 <h3>{year}</h3>
