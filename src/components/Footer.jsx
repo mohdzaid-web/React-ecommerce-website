@@ -26,7 +26,7 @@ const addressList = [
 const socialList = [
   {
     iconName: "icofont-facebook",
-    siteLink: "#",
+    siteLink:  "https://facebook.com",
     className: "facebook",
   },
   {
@@ -36,12 +36,12 @@ const socialList = [
   },
   {
     iconName: "icofont-linkedin",
-    siteLink: "#",
+    siteLink: "https://www.linkedin.com/in/mohd-zaid-web/",
     className: "linkedin",
   },
   {
     iconName: "icofont-instagram",
-    siteLink: "#",
+    siteLink: "https://www.instagram.com/zaid._.malik__/?hl=en-in",
     className: "instagram",
   },
   {
@@ -165,7 +165,7 @@ const Footer = ()=>{
                                                 {
                                                     socialList.map((val,i)=>(
                                                         <li key={i}>
-                                                            <a href="#" className={val.className}>  <i className={val.iconName}>{val.text}</i></a>
+                                                            <a href={val.siteLink} className={val.className}>  <i className={val.iconName}>{val.text}</i></a>
                                                         </li>
                                                     ))
                                                 }
@@ -212,7 +212,7 @@ const Footer = ()=>{
                                                 {
                                                     ItemList.map((val,i)=>(
                                                         <li key={i}>
-                                                           <a href="#">{val.text}</a>
+                                                           <a href={val.link}>{val.text}</a>
                                                         </li>
                                                     ))
                                                 }
