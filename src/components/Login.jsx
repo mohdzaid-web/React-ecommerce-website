@@ -23,10 +23,19 @@ const Login =()=>{
         const user = result.user
         alert('Login Successfull')
         navigate(from, {replace:true})
-       }).catch((error)=>{
-        const errormsg = error.massage
-        seterrorMessage('Plase Provide a valid email or password')
-       })
+       }).catch((error) => {
+    console.error("Login failed:", error)
+
+    seterrorMessage(
+        error.code === "auth/too-many-requests"
+            ? "Too many attempts. Please try again later."
+            : "Please provide a valid email address and password."
+    )
+})
+    //    .catch((error)=>{
+    //     const errormsg = error.massage
+    //     seterrorMessage('Plase Provide a valid email or password')
+    //    })
         
         
         
@@ -35,10 +44,17 @@ const Login =()=>{
         signupwithgmail().then((result)=>{
             const user = result.user
             navigate(from, {replace:true})
-        }).catch((error)=>{
-        const errormsg = error.massage
-        seterrorMessage('Plase Provide a valid email or password')
-       })        
+        }).catch((error) => {
+    console.error("Google sign-in failed:", error)
+
+    seterrorMessage(
+        "Unable to sign in with Google. Please try again."
+    )
+})
+    //     .catch((error)=>{
+    //     const errormsg = error.massage
+    //     seterrorMessage('Plase Provide a valid email or password')
+    //    })        
     }
     return(
         <div>
@@ -87,7 +103,7 @@ const Login =()=>{
                             <h5 className="subtitle">{socialtitle}</h5>
                             <ul className="lab-ul social-icons justify-content-center">
                                 <li>
-                                    <button className="github" onClick={handleregister}><i className="icofont-github"></i></button>
+                                    <button type="button" className="github" onClick={handleregister}><i className="icofont-github"></i></button>
                                 </li>
                                  <li>
                                     <a href="/" className="facebook"><i className="icofont-facebook"></i></a>
